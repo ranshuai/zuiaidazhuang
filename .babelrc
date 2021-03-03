@@ -11,14 +11,14 @@
   "plugins": [
     "transform-vue-jsx", 
     "transform-runtime",
-//     [
-//         "import",
-//         {
-//         "libraryName": "vant",
-//         "libraryDirectory": "es",
-//         "style": true
-//         },
-//         "vant"
-//   ]
+    [
+        "import",
+        {
+        "libraryName": "vant",
+        "libraryDirectory": "es",
+        "style": true
+        },
+        "vant"
+  ]
 ]
 }
