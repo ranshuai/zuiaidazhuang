@@ -43,7 +43,7 @@
             <div>更多商品</div>
         </section>
         <section class="goods-card-small-wrapper">
-            <div class="goods-card-small" @click="goToDetail">
+            <div class="goods-card-small" @click="goToDetail('detail')">
                 <div></div>
                 <div>
                     <div class="title">
@@ -77,7 +77,7 @@
             <div>更多店铺</div>
         </section>
         <section class="shops-card-wrapper">
-            <div class="shops-card">
+            <div class="shops-card" @click="goToDetail('store')">
                 <div></div>
                 <div>
                     <div>
@@ -152,8 +152,8 @@ export default {
     watch: {},
     computed: {},
     methods: {
-        goToDetail(){
-            this.$router.push({ path: 'detail', params: { userId: 123 }})
+        goToDetail($name){
+            this.$router.push({ path:$name, params: { userId: 123 }})
         }
     },
     created() {},
