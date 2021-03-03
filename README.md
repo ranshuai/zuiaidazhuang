@@ -63,3 +63,10 @@ git remote add origin https://github.com/ranshuai/zuiaidazhuang.git
         }
 4.  引入scss文件 通过@import ~ (注意区分中文) 表示你后面的值为 alias 然后就会去 webpack alias 配置中找相应的值, 然后拼接成最后的地址
     @import '～@/styles/index.scss';
+
+
+    ### 业务
+    1.
+    2.商品详情页
+    2.1 <van-sku  商品规格组件
+    2.2 <van-goods-action> 加入购物车组件

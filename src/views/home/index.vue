@@ -43,7 +43,7 @@
             <div>更多商品</div>
         </section>
         <section class="goods-card-small-wrapper">
-            <div class="goods-card-small">
+            <div class="goods-card-small" @click="goToDetail">
                 <div></div>
                 <div>
                     <div class="title">
@@ -151,7 +151,11 @@ export default {
     },
     watch: {},
     computed: {},
-    methods: {},
+    methods: {
+        goToDetail(){
+            this.$router.push({ path: 'detail', params: { userId: 123 }})
+        }
+    },
     created() {},
     mounted() {},
 };
