@@ -27,6 +27,13 @@ export default {
           icon: 'home-o'
         },
         {
+          title: '分类',
+          to: {
+            name: 'Category'
+          },
+          icon: 'coupon-o'
+        },
+        {
           title: '关于我',
           to: {
             name: 'About'

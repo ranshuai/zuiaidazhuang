@@ -1,7 +1,5 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import HelloWorld from '@/components/HelloWorld'
-
 
 Vue.use(Router)
 /**
@@ -23,6 +21,12 @@ const constantRouterMap = [
                 name: 'Home',
                 component: () => import('@/views/home/index'),
                 meta: { title: '首页', keepAlive: false,  TabbarShow: true }
+            },
+            {
+                path: '/category',
+                name: 'Category',
+                component: () => import('@/views/category/index'),
+                meta: { title: '分类', keepAlive: false,  TabbarShow: true }
             },
             {
                 path: '/about',
