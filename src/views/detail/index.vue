@@ -1,5 +1,13 @@
 <template>
     <div class="goods-container">
+        <van-nav-bar
+            fixed
+            title="商品详情"
+            left-text="返回"
+            left-arrow
+            @click-left="onClickLeft"
+            z-index="10"
+        />
         <!-- 商品图片 -->
         <section class="my-swipe-wrapper">
             <van-swipe
@@ -130,6 +138,9 @@ export default {
     watch: {},
     computed: {},
     methods: {
+        onClickLeft() {
+            this.$router.go(-1);
+        },
         handleSKUChange() {
             this.goodsSKUShow = true;
         },
@@ -143,6 +154,7 @@ export default {
 <style lang="scss" scoped>
 @import "~@/styles/index.scss";
 .goods-container {
+    @include paddingBottom();
     .my-swipe .van-swipe-item {
         color: #fff;
         font-size: 20px;

@@ -38,3 +38,7 @@
 @mixin marginBottom ($d:10px) {
   margin-bottom: $d
 }
+
+@mixin paddingBottom($d:50px) {
+  padding-bottom: $d;
+}

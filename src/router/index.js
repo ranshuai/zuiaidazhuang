@@ -40,6 +40,11 @@ const constantRouterMap = [
                 meta: {  TabbarShow: false }
             },
             {
+                path: '/goodsList',
+                component: () => import('@/views/goodsList/index'),
+                meta: {  TabbarShow: false }
+            },
+            {
                 path: '/store',
                 component: () => import('@/views/store/index'),
                 meta: {  TabbarShow: false }

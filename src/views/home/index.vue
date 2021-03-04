@@ -152,9 +152,9 @@ export default {
     watch: {},
     computed: {},
     methods: {
-        goToDetail($name){
-            this.$router.push({ path:$name, params: { userId: 123 }})
-        }
+        goToDetail($name) {
+            this.$router.push({ path: $name, params: { userId: 123 } });
+        },
     },
     created() {},
     mounted() {},
@@ -163,6 +163,7 @@ export default {
 <style lang="scss" scoped>
 @import "~@/styles/index.scss";
 .home-container {
+    @include paddingBottom();
     .my-swipe .van-swipe-item {
         color: #fff;
         font-size: 20px;

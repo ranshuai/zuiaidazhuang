@@ -17,7 +17,7 @@
                 <div>
                     <div class="title">厨房/卫浴</div>
                     <div class="category-item-wrapper">
-                        <div class="category-item">
+                        <div class="category-item" @click="goToPage('goodsList')">
                             <div></div>
                             <div>清洁用品</div>
                         </div>
@@ -66,6 +66,9 @@ export default {
     computed: {},
     methods: {
         onChange() {},
+        goToPage($name){
+            this.$router.push({ path:$name, params: { userId: 123 }})
+        }
     },
     created() {},
     mounted() {},
@@ -74,6 +77,7 @@ export default {
 <style lang="scss" scoped>
 @import "~@/styles/index.scss";
 .category-container {
+     @include paddingBottom();
     .category-content {
         @include flexbox(space-around,start);
         > :last-child {
