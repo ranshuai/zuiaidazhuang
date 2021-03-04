@@ -29,6 +29,12 @@ const constantRouterMap = [
                 meta: { title: '分类', keepAlive: false,  TabbarShow: true }
             },
             {
+                path: '/car',
+                name: 'Car',
+                component: () => import('@/views/car/index'),
+                meta: { title: '购物车', keepAlive: false,  TabbarShow: true }
+            },
+            {
                 path: '/about',
                 name: 'About',
                 component: () => import('@/views/about/index'),

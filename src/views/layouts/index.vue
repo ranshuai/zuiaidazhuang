@@ -34,6 +34,13 @@ export default {
           icon: 'coupon-o'
         },
         {
+          title: '购物车',
+          to: {
+            name: 'Car'
+          },
+          icon: 'shopping-cart-o'
+        },
+        {
           title: '关于我',
           to: {
             name: 'About'

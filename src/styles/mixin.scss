@@ -42,3 +42,6 @@
 @mixin paddingBottom($d:50px) {
   padding-bottom: $d;
 }
+@mixin paddingTop($d:46px) {
+    padding-top:$d;
+}
