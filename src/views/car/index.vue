@@ -48,7 +48,7 @@
                         </template>
 
                         <template #num>
-                            <div class="buy-num-wrapper">
+                            <!-- <div class="buy-num-wrapper">
                                 <van-button
                                     size="small"
                                     icon="minus"
@@ -60,7 +60,9 @@
                                     size="small"
                                     type="default"
                                 ></van-button>
-                            </div>
+                            </div> -->
+
+                            <van-stepper v-model="_item.buyNum" />
                         </template>
                     </van-card>
                     <template #right>
@@ -241,10 +243,7 @@ export default {
         .goods-card {
             width: 100%;
             margin-top: 0;
-            /deep/ .van-card__price {
-                height: 36px;
-                line-height: 36px;
-            }
+           
         }
         /deep/ .van-card {
             background: #fff;
@@ -260,18 +259,6 @@ export default {
     }
     .padding-left-10 {
         padding-left: 10px;
-    }
-    .change-buyNum {
-    }
-    .buy-num-wrapper {
-        @include flexbox();
-        /deep/ .van-field {
-            width: 50px;
-            padding: 0 10px;
-        }
-        /deep/ .van-field__control {
-            text-align: center;
-        }
     }
 }
 </style>
